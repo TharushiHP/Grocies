@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Registration</title>
+    <link rel="stylesheet" href="css styles/loyalty.css">
+    <link rel="stylesheet" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+        
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+               <h1 class="header-title">Groceis</h1>
+        </div> 
+        <div class="navbar"> 
+        <nav> 
+            <ul class="nav" type="none"> 
+                <li> <a  href="home.html">Home</a> </li> 
+                
+                <li> <a  href="vegetable.html">Vegetables</a> </li> 
+                    
+                <li> <a href="dairyproducts.html">Dairy products</a> </li> 
+                
+                <li><a href="Cosmetic and skincare page.html">Cosmetics and skincare</a></li> 
+                
+                <li> <a href="order.html">Order</a> </li> 
+                
+                <li> <a class="active" href="loyaltyreg.html">Loyalty Registration</a></li> 
+
+                <li> <a href="aboutus.html">About Us</a></li> 
+            </ul> 
+        </nav> 
+        
+    </div>
+
+</header>
+        
+       
+    <main>
+
+        <h1 class="form-header">Customer Details</h1>
+
+        <form>
+            <label for="fname">Full name:</label><br>
+            <input type="text" id="fname" name="fname"><br><br><br>
+            
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br><br><br>
+            
+            <label for="phonenum">Phone Number:</label><br>
+            <input type="tel" id="phonenum" name="phonenum" maxlength="10"><br><br><br>
+            
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" ><br><br><br>
+            
+            <label for="loyaltyscheme">Choose a loyalty scheme:</label>
+            <select name="loyaltyscheme" id="loyaltyscheme">
+              <option value="Points-Based Loyalty Program">Points-Based Loyalty Program</option>
+              <option value="Tiered Loyalty Program">Tiered Loyalty Program</option>
+              <option value="Cashback Loyalty Program">Cashback Loyalty Program</option>
+              <option value="Subscription Loyalty Program">Subscription Loyalty Program</option>
+            </select>
+            <br>
+            
+            <center> <input type="checkbox" id="checkbox1" name="checkbox1" value="terms">
+           <label for="checkbox1"> I agree to the terms and conditions of the loyalty program.</label></center><br><br><br>
+           <center><input type="submit" value="Confirm"></center>
+         </form>
+    </main>
+    <footer>
+        <h2>Benefits of the Loyalty programs</h2>
+        <p><br>
+            <ol>
+                <li>Points-Based Loyalty Program:
+                    How it works: Customers earn points for every purchase they make. These points can then be redeemed for discounts, free products, or other rewards.
+                    Benefits:
+                    Encourages repeat purchases as customers strive to accumulate more points.
+                    Flexibility in redemption options allows customers to choose rewards that appeal to them.
+                    Can be tailored to incentivize specific behaviors, such as purchasing certain products or shopping during off-peak hours.</li>
+                <br><br>
+                <li>Tiered Loyalty Program:
+                    How it works: Customers progress through different tiers (e.g., Silver, Gold, Platinum) based on their level of engagement and spending. Each tier offers increasingly attractive rewards and benefits.
+                    Benefits:
+                    Provides a sense of exclusivity and status for customers who reach higher tiers.
+                    Encourages customers to spend more to unlock better rewards and move up the tiers.
+                    Offers personalized rewards and experiences based on a customer's tier level, enhancing loyalty and satisfaction.</li> 
+                <br><br>
+                <li>Cashback Loyalty Program:
+                    How it works: Customers earn a percentage of their purchases back in the form of cashback, which can be applied towards future purchases or received as a cash reward.
+                    Benefits:
+                    Provides immediate tangible value to customers in the form of cash savings.
+                    Appeals to a wide range of shoppers who appreciate straightforward rewards.
+                    Can be used as an incentive for customers to spend more, knowing they will receive a percentage back.</li>
+                <br><br>
+                <li>Subscription Loyalty Program:
+                    How it works: Customers pay a recurring fee to access exclusive benefits, such as discounts, free shipping, or members-only events.
+                    Benefits:
+                    Generates predictable recurring revenue for the supermarket.
+                    Encourages customer loyalty through ongoing perks and privileges.
+                    Provides a steady stream of value for subscribers, incentivizing continued engagement and purchases.</li>           
+            </ol>
+        </p>
+    </footer>
+    
+</body>
+</html>
