@@ -139,3 +139,35 @@ img{
   height: 200px;
   width: 250px;
 }
+
+ @media (max-width: 480px) {
+  .header-title {
+      font-size: 1.5em;
+  }
+
+  .nav li {
+      font-size: 1em;
+  }
+
+  .introtext p {
+      font-size: 1em;
+  }
+
+  .app-dwldtext {
+      font-size: 1em;
+  }
+
+  .btn {
+      font-size: 1em;
+      padding: 10px;
+      margin: 10px 0;
+  }
+
+  .fitemh {
+      font-size: 1.2em;
+  }
+
+  .fitemp {
+      font-size: 1em;
+  }
+}

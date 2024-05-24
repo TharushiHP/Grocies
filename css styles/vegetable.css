@@ -137,17 +137,32 @@ a{
 }
 
   
-  @media (max-width: 480px) {
-    .navbar {
-        padding: 0.5rem;
-    }
+@media (max-width: 480px) {
+  .header-title {
+      font-size: 1.5em;
+  }
 
-     .gridcontainer .vegetable {
-        padding: 0.5rem;
-    }
+  .nav li {
+      font-size: 1em;
+  }
 
-    .gridcontainer .vegetable img {
-        max-width: 150px;
-        margin: 0 auto;
-    }
+  h2 {
+      font-size: 1.5em;
+      padding: 0 10px;
+  }
+
+  .content li {
+      font-size: 1em;
+      padding: 10px;
+  }
+
+  .button {
+      font-size: 1em;
+      padding: 10px;
+      margin: 10px 0;
+  }
+
+  .card-content p {
+      font-size: 1em;
+  }
 }
