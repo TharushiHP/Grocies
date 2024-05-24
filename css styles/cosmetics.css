@@ -114,27 +114,10 @@ font-size: 25px;
 cursor: pointer;
 }
 
-@media screen and (max-width:600px) {
-    body{
-        background-color: lightskyblue;
-
-    }
-    table, tr, td{
-        display: block;
-    }
-    th{
-        display: none;
-    }
-    
-}
 
 
 
-  h1{
-    background-image: url("cosmeticsbackgroundimg.jpg");
-  }
-
-  @media (max-width: 480px) {
+@media (max-width: 480px) {
     .navbar {
         padding: 0.5rem;
     }

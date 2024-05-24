@@ -46,6 +46,12 @@ body{
     background-color: #1E9600;
     color: white;
   }
+  body{
+    background-image: url("../homepageimages/Martini.jpg");
+    background-repeat: no-repeat; 
+    background-size:cover;
+  
+  }
   
 main {
     padding: 20px;

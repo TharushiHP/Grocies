@@ -48,6 +48,12 @@ body{
   color: white;
 }
 
+body{
+  background-image: url("../homepageimages/Martini.jpg");
+  background-repeat: no-repeat; 
+  background-size:cover;
+
+}
 
 h2 {
   font-size: 36px;
