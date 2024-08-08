@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order page</title>
-    <link rel="stylesheet" href="css styles/order.css">
+    <link rel="stylesheet" href="css_styles/order.css">
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
@@ -23,14 +23,16 @@
         </div> 
         <div class="navbar"> 
         <nav> 
-            <ul class="nav" type="none"> 
+            <ul class="nav" > 
                 <li> <a  href="index.html">Home</a> </li> 
                 
                 <li> <a  href="vegetable.html">Vegetables</a> </li> 
                     
                 <li> <a href="dairyproducts.html">Dairy products</a> </li> 
                 
-                <li><a href="Cosmetic and skincare page.html">Cosmetics and skincare</a></li> 
+                <li><a href="Cosmetic-and-skincare-page.html">Cosmetics and skincare</a></li> 
+
+                <li><a href="product.html">Products</a></li>
                 
                 <li> <a class="active" href="order.html">Order</a> </li> 
                 
@@ -44,35 +46,75 @@
 
 </header>
     <main>
+
+        
+
+        <h2>Order Summary</h2>
+        <table id="order-summary"  class="table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total Price</td>
+                    <td id="total-price">0</td>
+                </tr>
+            </tfoot>
+        </table>
+
         <h2 class="form-header">Billing Details</h2>
 
-        <form>
+        <form id="checkoutForm">
+            <h2>Personal Details</h2>
             <label for="fname">Full name:</label><br>
-            <input type="text" id="fname" name="fname"><br><br><br>
+            <input type="text" id="fname" name="fname" required><br><br><br>
 
+            <label for="mail">Email Address:</label><br>
+            <input type="email" id="mail" name="mail" required><br><br><br>
+
+            <label for="phonenum">Phone Number:</label><br>
+            <input type="tel" id="phonenum" name="phonenum" maxlength="10" required><br><br><br>
+          
+             
+          
+
+            <h2>Delivery Details</h2>
             <label for="address">Address:</label><br>
-            <input type="text" id="address" name="address"><br><br><br>
+            <input type="text" id="address" name="address" required><br><br><br>
           
             <label for="district">District:</label><br>
-            <input type="text" id="district" name="district"><br><br><br>
+            <input type="text" id="district" name="district" required><br><br><br>
          
             <label for="city">Town/City:</label><br>
-            <input type="text" id="city" name="city"><br><br><br>
+            <input type="text" id="city" name="city" required><br><br><br>
          
             <label for="postalcode">Postal Code:</label><br>
-            <input type="text" id="postalcode" name="postalcode"><br><br><br>
+            <input type="text" id="postalcode" name="postalcode" required><br><br><br>
            
-            <label for="phonenum">Phone Number:</label><br>
-            <input type="tel" id="phonenum" name="phonenum" maxlength="10"><br><br><br>
-          
-             <label for="mail">Email Address:</label><br>
-            <input type="email" id="mail" name="mail"><br><br><br>
+           <h2>Payment Information</h2>
 
-            <label for="note">Order Note (Optional):</label><br>
-            <textarea id="note" name="note" rows="10" cols="100"></textarea><br><br><br>
+           <label for="cardnumber">Card Number:</label>
+           <input type="text" id="cardnumber" name="cardnumber" required><br><br><br>
 
-            <center><input type="submit" value="Confirm Billing Details"></center>
+           <label for="expirydate">Expiry date:</label>
+           <input type="text" id="expirydate" name="expirydate" required><br><br><br>
+
+           <label for="cvv">CVV:</label>
+           <input type="text" id="cvv" name="cvv" required><br><br>
+
+
+           <center><button type="submit" id="pay" class="pay">Pay</button></center> 
         </form> 
+
+        <div id="confirmationMessage" style="display: block;" class="message"></div>
+
+        <script src="Javascript/order.js"></script>
 
         
         
